@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <title>One Year of Comrades Training</title>
 <style>
-@import url(../stylesheets/style_comrades_all.css);
-@import url(../stylesheets/style_comrades_wide.css);
+@import url(stylesheets/style_comrades_all.css);
+@import url(stylesheets/style_comrades_wide.css);
 </style>
 </head>
 
@@ -32,9 +32,9 @@
     </div>
     <!-- <link href="/stylesheets/font-awesome.min.css" rel="stylesheet"> -->
     <script src="https://use.fontawesome.com/04858c3276.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://d3js.org//queue.v1.min.js"></script>
-    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org//queue.v1.min.js"></script>
+    <script src="https://underscorejs.org/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-range/2.2.0/moment-range.min.js"></script>
     <script>
@@ -637,8 +637,8 @@
     }
 
     queue()
-        .defer(d3.csv, '../data/data_marathon_full.csv')
-        .defer(d3.csv, '../data/comrades_summary.csv')
+        .defer(d3.csv, 'data/data_marathon_full.csv')
+        .defer(d3.csv, 'data/comrades_summary.csv')
         .await(draw_svg);
     </script>
     <!-- <script src="https://use.fontawesome.com/04858c3276.js"></script> -->
